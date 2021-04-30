@@ -540,6 +540,7 @@ class PhoneView:
                         # print(tr["battery_df"])
                         # print(80 * "-")
                         PhoneView._copy_subset(r, tr, "location_df", query)
+                        PhoneView._copy_subset(r, tr, "filtered_location_df", query)
                         PhoneView._copy_subset(r, tr, "motion_activity_df", query)
                         PhoneView._copy_subset(r, tr, "transition_df", query)
                         for sr in tr["evaluation_section_ranges"]:
@@ -551,6 +552,7 @@ class PhoneView:
                             # print(tr["battery_df"])
                             # print(80 * "-")
                             PhoneView._copy_subset(tr, sr, "location_df", query)
+                            PhoneView._copy_subset(r, tr, "filtered_location_df", query)
                             PhoneView._copy_subset(tr, sr, "motion_activity_df", query)
                             PhoneView._copy_subset(tr, sr, "transition_df", query)
     #
